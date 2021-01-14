@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+          <h1 class="title-dashboard">Busca por Estado</h1>
+        </div>
+    </div>
+    
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field appearance="fill" >
+                <mat-label>UF</mat-label>
+                <mat-select [(value)]="selected">
+                  <mat-option *ngFor="let state of uf" [value]="state.Sigla">
+                    {{state.Nome}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <button mat-flat-button color="primary" (click)="btnClicked()">Pesquisar</button>
+        </div>
+    </div>
+</div>

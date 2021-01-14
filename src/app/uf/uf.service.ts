@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Data } from './brazil.model';
-import { API } from 'src/app/app.api';
+import { API_UF } from 'src/app/app.api';
+import { UF } from './uf.model';
 
 @Injectable({
     providedIn: 'root'
   })
-export class BrazilService {
+export class UfService {
     constructor(private http: HttpClient) { }
 
-    getBrazilData() {
-        return this.http.get<Data>(`${API}/brazil`);
+    getListUF() {
+        return this.http.get<UF[]>(API_UF);
     }
 }

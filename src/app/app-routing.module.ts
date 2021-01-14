@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrazilComponent } from './dashboard/brazil/brazil.component';
-import { StatesComponent } from './dashboard/states/states.component';
+import { StatesComponent } from './uf/states/states.component';
 import { HomeComponent } from './home/home.component';
+import { UfComponent } from './uf/uf.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'dashboard/brasil', component: BrazilComponent},
-  {path: 'dashboard/estados', component: StatesComponent}
+  {path: 'dashboard/estados', component: UfComponent},
+  {path: 'dashboard/estados/:id', component: StatesComponent}
 ];
 
 @NgModule({

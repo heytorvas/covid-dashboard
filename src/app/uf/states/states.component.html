@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="title-dashboard">{{stateCovid.state}}</h1>
+      </div>
+      <div class="col-md-4 update_time">
+        <span>Atualizado em {{stateCovid.datetime | date: 'dd/MM/yyyy - hh:mm:ss a' }}</span>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <mat-card class="mat-elevation-z4 text-card cases">
+            <h1 class="title-card">Casos</h1>
+            <p class="content-card">{{stateCovid.cases}}</p>
+        </mat-card>
+      </div>
+      <div class="col-md-6 mb-2">
+        <mat-card class="mat-elevation-z4 text-card actives">
+          <h1 class="title-card">Suspeitos</h1>
+          <p class="content-card">{{stateCovid.suspects}}</p>
+        </mat-card>
+      </div>
+    </div>
+  
+    <div class="row">
+  
+      <div class="col-md-6 mb-2">
+        <mat-card class="mat-elevation-z4 text-card refuses">
+          <h1 class="title-card">Descartados</h1>
+          <p class="content-card">{{stateCovid.refuses}}</p>
+        </mat-card>
+      </div>
+  
+      <div class="col-md-6 mb-2">
+        <mat-card class="mat-elevation-z4 text-card deaths">
+          <h1 class="title-card">Mortes</h1>
+          <p class="content-card">{{stateCovid.deaths}}</p>
+        </mat-card>
+      </div>
+  
+    </div>
+  </div>

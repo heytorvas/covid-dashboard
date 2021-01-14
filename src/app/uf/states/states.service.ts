@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Data } from './brazil.model';
+import { States } from './states.model';
 import { API } from 'src/app/app.api';
 
 @Injectable({
     providedIn: 'root'
-  })
-export class BrazilService {
+})
+export class StatesService {
     constructor(private http: HttpClient) { }
 
-    getBrazilData() {
-        return this.http.get<Data>(`${API}/brazil`);
+    getStatesData(id: string) {
+        return this.http.get<States>(`${API}/brazil/uf/${id}`);
     }
 }

@@ -12,12 +12,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card'; 
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select'; 
 
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrazilComponent } from './dashboard/brazil/brazil.component';
-import { StatesComponent } from './dashboard/states/states.component';
+import { StatesComponent } from './uf/states/states.component';
+import { UfComponent } from './uf/uf.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { StatesComponent } from './dashboard/states/states.component';
     DashboardComponent,
     BrazilComponent,
     StatesComponent,
+    UfComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { StatesComponent } from './dashboard/states/states.component';
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
