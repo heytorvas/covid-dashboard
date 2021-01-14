@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BrazilService } from './brazil.service';
 
 @Component({
   selector: 'app-brazil',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrazilComponent implements OnInit {
 
-  ngOnInit(): void {
+  public brazilCovid: any;
 
+  constructor(private brazilService: BrazilService) { }
+
+  ngOnInit(): void {
+    this.brazilService.getBrazilData().subscribe((result) => {
+      this.brazilCovid = result.data;
+    })
   }
 
 }
