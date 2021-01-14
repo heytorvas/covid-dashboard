@@ -9,3 +9,36 @@
 .update_time {
     text-align: right;
 }
+
+h1.title-dashboard {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.mat-card-header-text {
+    margin-left: 0px !important;
+}
+
+.text-card {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p.content-card {
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.cases {
+    background-color: #f5aa42;
+}
+.recovered {
+    background-color: #76bf4e;
+}
+.actives {
+    background-color: #dbe06c;
+}
+.deaths {
+    background-color: #cc2732;
+}

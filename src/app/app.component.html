@@ -2,10 +2,18 @@
   <mat-sidenav-container fullscreen>
     <mat-sidenav mode="side" #sidenav opened position="start">
       <mat-list dense>
-        <mat-list-item> Início </mat-list-item>
-        <mat-list-item> Pepper </mat-list-item>
-        <mat-list-item> Salt </mat-list-item>
-        <mat-list-item> Paprika </mat-list-item>
+        <mat-list-item>
+          <a class="link-sidenav" [routerLink]="['/']">Início</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a class="link-sidenav" [routerLink]="['/dashboard/brasil']">Brasil</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a class="link-sidenav" [routerLink]="['/dashboard/estados']">Estados</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a class="link-sidenav" [routerLink]="['/contato']">Contato</a>
+        </mat-list-item>
        </mat-list>
     </mat-sidenav>
     <mat-sidenav-content>

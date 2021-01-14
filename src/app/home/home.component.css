@@ -1,5 +1,6 @@
 .jumbotron {
-    text-align:center;
+    text-align: center;
+    background-color: #fafafa !important;
 }
 
 .jumbotron h2 {

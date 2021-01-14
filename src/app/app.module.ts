@@ -18,7 +18,6 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrazilComponent } from './dashboard/brazil/brazil.component';
 import { StatesComponent } from './dashboard/states/states.component';
-import { BrazilService } from './dashboard/brazil/brazil.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +41,7 @@ import { BrazilService } from './dashboard/brazil/brazil.service';
     MatGridListModule,
     MatCardModule
   ],
-  providers: [BrazilService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
