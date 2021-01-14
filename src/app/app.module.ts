@@ -20,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrazilComponent } from './dashboard/brazil/brazil.component';
 import { StatesComponent } from './uf/states/states.component';
 import { UfComponent } from './uf/uf.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { UfComponent } from './uf/uf.component';
     BrazilComponent,
     StatesComponent,
     UfComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

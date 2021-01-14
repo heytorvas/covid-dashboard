@@ -1,6 +1,27 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    width: 200px;
+}
+
+.update-time {
+    text-align: right;
+}
+
+.local-flag {
+    height: 50px;
+    border-radius: 12px;
+}
+
 h1.title-dashboard {
     font-size: 40px;
     font-weight: 500;
+}
+
+h1.title-dashboard, .update-time {
+    padding-top: 2%;
 }
 
 .text-card {
@@ -13,6 +34,8 @@ p.content-card {
     padding-top: 4%;
     padding-bottom: 2%;
 }
+
+
 
 .cases {
     background-color: #f5aa42;

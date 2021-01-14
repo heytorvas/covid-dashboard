@@ -1,10 +1,13 @@
 <div class="container">
 
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-1">
+        <img class="local-flag" src='{{ "https://raw.githubusercontent.com/bgeneto/bandeiras-br/master/imagens/" + stateCovid.uf + ".png" }}' />
+      </div>
+      <div class="col-md-7">
         <h1 class="title-dashboard">{{stateCovid.state}}</h1>
       </div>
-      <div class="col-md-4 update_time">
+      <div class="col-md-4 update-time">
         <span>Atualizado em {{stateCovid.datetime | date: 'dd/MM/yyyy - hh:mm:ss a' }}</span>
       </div>
     </div>

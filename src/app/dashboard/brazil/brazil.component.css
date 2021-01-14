@@ -6,13 +6,22 @@
     width: 200px;
 }
 
-.update_time {
+.update-time {
     text-align: right;
+}
+
+.local-flag {
+    height: 50px;
+    border-radius: 12px;
 }
 
 h1.title-dashboard {
     font-size: 40px;
     font-weight: 500;
+}
+
+h1.title-dashboard, .update-time {
+    padding-top: 2%;
 }
 
 .mat-card-header-text {
