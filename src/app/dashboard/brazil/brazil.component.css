@@ -43,6 +43,10 @@ p.content-card {
     padding-bottom: 2%;
 }
 
+.mat-progress-bar {
+    height: 20px;
+}
+
 .cases {
     background-color: #f5aa42;
 }
