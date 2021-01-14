@@ -17,13 +17,19 @@
   <div class="row">
     <div class="col-md-6 mb-2">
       <mat-card class="mat-elevation-z4 text-card cases">
-          <h1 class="title-card">Casos</h1>
+          <h1 class="title-card">
+            <img class="card-icon" src="../../../assets/icons/virus.png" />
+            Casos
+          </h1>
           <p class="content-card">{{brazilCovid.confirmed}}</p>
       </mat-card>
     </div>
     <div class="col-md-6 mb-2">
       <mat-card class="mat-elevation-z4 text-card recovered">
-        <h1 class="title-card">Recuperados</h1>
+        <h1 class="title-card">
+          <img class="card-icon" src="../../../assets/icons/check.png" />
+          Recuperados
+        </h1>
         <p class="content-card">{{brazilCovid.recovered}}</p>
       </mat-card>
     </div>
@@ -33,17 +39,24 @@
 
     <div class="col-md-6 mb-2">
       <mat-card class="mat-elevation-z4 text-card actives">
-        <h1 class="title-card">Ativos</h1>
+        <h1 class="title-card">
+          <img class="card-icon" src="../../../assets/icons/caution.png" />
+          Ativos
+        </h1>
         <p class="content-card">{{brazilCovid.cases}}</p>
       </mat-card>
     </div>
 
     <div class="col-md-6 mb-2">
       <mat-card class="mat-elevation-z4 text-card deaths">
-        <h1 class="title-card">Mortes</h1>
+        <h1 class="title-card">
+          <img class="card-icon" src="../../../assets/icons/death.png" />
+          Mortes
+        </h1>
         <p class="content-card">{{brazilCovid.deaths}}</p>
       </mat-card>
     </div>
 
   </div>
+
 </div>

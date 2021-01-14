@@ -2,3 +2,12 @@ h1.title-dashboard {
     font-size: 30px;
     font-weight: 500;
 }
+
+.mat-form-field {
+    width: 100%;
+}
+
+button.mat-focus-indicator.mat-flat-button.mat-button-base.mat-primary {
+    margin-top: 3%;
+    float: right;
+}

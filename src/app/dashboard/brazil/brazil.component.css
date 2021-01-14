@@ -28,6 +28,10 @@ h1.title-dashboard, .update-time {
     margin-left: 0px !important;
 }
 
+.card-icon {
+    height: 25px;
+}
+
 .text-card {
     text-align: center;
     font-weight: 500;
